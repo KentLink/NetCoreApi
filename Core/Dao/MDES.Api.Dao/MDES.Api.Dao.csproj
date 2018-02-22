@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\MDES.Api.Dao.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.Utility\Common.Utility.csproj" />
+    <ProjectReference Include="..\..\..\Variable\Variable\Variable.csproj" />
+    <ProjectReference Include="..\..\Model\MDES.Api.Model\MDES.Api.Model.csproj" />
+  </ItemGroup>
+
+</Project>
